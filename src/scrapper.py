@@ -102,7 +102,7 @@ def main():
         brand = sub(r"\s+", '_', term)
         brand_dir = os.path.join('images', brand)
         URL = 'https://www.google.com/search?q=' + phrase + '&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjvpO7e0PDqAhUYIDQIHXL9BpgQ_AUoAXoECA4QAw&biw=2276&bih=783&dpr=1.13'
-        driver = get_driver(URL, 'PATH/TO/DRIVER')
+        driver = get_driver(URL, '../chromedriver.exe')
         scrape_img_tag(driver, args.max_images, brand, brand_dir, phrase)
         driver.close()
         print(f'\nFinished downloading images for: {term}\n')
