@@ -1,0 +1,4 @@
+dependencies:
+    - selenium
+    - Pillow
+    - requests
